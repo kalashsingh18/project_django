@@ -27,6 +27,8 @@ def api_for_all_custmor(request):
     x=models.Customer.objects.all()
     x=[[x.password,x.last_name] for x in x]
     return HttpResponse(x)
+def rtest(request):
+    return HttpResponse("try the requests")
 
 
 
